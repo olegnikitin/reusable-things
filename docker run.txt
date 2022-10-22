@@ -1,0 +1,5 @@
+sudo docker run --rm --name selectel-pgdocker -e POSTGRES_PASSWORD=selectel -e POSTGRES_USER=selectel -e POSTGRES_DB=selectel -d -p 5432:5432 -v $HOME/docker/volumes/postgres:/var/lib/postgresql/data postgres
+
+docker run --rm --name selectel-pgdocker -e POSTGRES_PASSWORD=selectel -e POSTGRES_USER=selectel -e POSTGRES_DB=selectel -d -p 5432:5432 -v $HOME/docker/volumes/postgres:/var/lib/postgresql/data postgres:13.4
+
+docker run --rm --name selectel-pgdocker -e POSTGRES_PASSWORD=pass -e POSTGRES_USER=postgres -e POSTGRES_DB=percepi -d -p 5432:5432 -v $HOME/docker/volumes/postgres:/var/lib/postgresql/data postgres:13.4
